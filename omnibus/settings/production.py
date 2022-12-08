@@ -1,7 +1,7 @@
 from .base import *
 import os
 
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS')
 
 DATABASES = {
     'default': {
